@@ -184,3 +184,10 @@ h3{
     flex-direction: column;
   }
 }
+
+.img{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+    /* padding-top: 100px; */
+}
