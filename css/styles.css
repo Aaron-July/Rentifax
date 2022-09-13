@@ -263,3 +263,34 @@ background: rgba(226,0,0,0.7);
   opacity: 1;
 
 }
+
+/* Features */
+
+.features{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.features-col{
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.features-col img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.features-col p{
+  padding: 0;
+}
+
+.features-col h3{
+  margin-left: 16;
+  margin-bottom: 15px;
+  text-align: left;
+}
