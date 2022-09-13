@@ -240,7 +240,7 @@ background: rgba(226,0,0,0.7);
   transition: 0.5s;
 }
 
-.layer:hover h3{
+.layer:hover h3 p{
   bottom: 49%;
   opacity: 1;
 
