@@ -12,6 +12,7 @@ body{
   background-size: cover;
   position: relative;
 }
+
 nav{
   display: flex;
   padding: 2% 6%;
@@ -395,7 +396,7 @@ background: rgba(226,0,0,0.7);
 .sub-header{
   height: 50vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("../images/.jpg");
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("../images/about.jpg");
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -430,4 +431,46 @@ background: rgba(226,0,0,0.7);
 
 .about-col p{
   padding: 15px 0 25px;
+}
+
+/* dumptruck */
+
+.dumptruck{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.dumptruck-col{
+  flex-basis: 33%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.dumptruck-col img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.dumptruck-col p{
+  padding: 0;
+}
+
+.dumptruck-col h3{
+  margin-left: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* dumptruck Page */
+.sub-header2{
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("../images/dumptruck3.png");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
 }
