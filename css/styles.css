@@ -5,11 +5,12 @@ body{
 }
 
 .header{
-  height: 30vh;
+  padding: 20px 10px;
+  height: 30p%;
   width: 100%;
   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("../images/excavator.jpeg");
   background-position: center;
-/*   background-size: cover; */
+  background-size: cover;
   position: relative;
 }
 
