@@ -5,7 +5,7 @@ body{
 }
 
 .header{
-  height: 100%;
+  min-height: 50vh;
   width: 100%;
   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("../images/excavator.jpeg");
   background-position: center;
@@ -58,7 +58,7 @@ nav img{
 }
 
 .text-box{
-  min-height: 50vh;
+ 
   width: 50%;
   color: #fff;
   padding: 20px 10px 20px 10px;
