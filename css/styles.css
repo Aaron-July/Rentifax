@@ -58,8 +58,9 @@ nav img{
 }
 
 .text-box{
-  width: 100%;
+  width: 50%;
   color: #fff;
+  padding: 20px 10px 20px 10px;
   position: absolute;
   top: 50%;
   left: 50%;
