@@ -106,7 +106,7 @@ nav .fa{
 
 @media(max-width: 700px) {
   .text-box h1{
-    font-size: 20px;
+    font-size: 30px;
   }
   .nav-links ul li{
     display: block;
@@ -116,8 +116,7 @@ nav .fa{
     position: absolute;
     background: #717171;
     width: 150px;
-    height: auto;
-/*      height: 100vh; */
+     height: 100vh;
     top: 0;
     right: -200px;
     text-align: left;
