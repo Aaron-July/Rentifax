@@ -12,6 +12,10 @@ body{
   background-size: cover;
   position: relative;
 }
+.logo {
+  color: white;
+  font-size: 28px;
+}
 
 nav{
   display: flex;
