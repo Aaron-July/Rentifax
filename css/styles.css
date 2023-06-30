@@ -141,125 +141,83 @@ nav .fa{
   }
 }
 
-.container {
-  height: 120px;
-  width: 120px;
-  margin: 250px auto 0;
-  position: relative;
+
+.center-con {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
-.circle {
-  background-color:#fff;
-  height: 120px;
-  width: 120px;
-  display: block;
-  border: 5px solid #00baff;
-  border-radius: 100px;
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
-  animation-name:circle;
-  animation-duration:1s;
-  animation-timing-function:linear;
-  animation-delay:0s;
-  animation-iteration-count:infinite;
-  animation-direction:normal;
-  animation-play-state:running;
-  -webkit-animation-name:circle;
-  -webkit-animation-duration:1s;
-  -webkit-animation-timing-function:linear;
-  -webkit-animation-delay:0s;
-  -webkit-animation-iteration-count:infinite;
-  -webkit-animation-direction:normal;
-  -webkit-animation-play-state:running;
+
+.round {
+    position: relative;
+    border: 3px solid #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
 }
-.fa {
-  font-size: 42px;
-  color: #00baff;
-  bottom: 27px;
-  position: absolute;
-  left: 50%;
-  margin-left: -18px;
-  animation-name:arrow;
-  animation-duration:1s;
-  animation-timing-function:linear;
-  animation-delay:0s;
-  animation-iteration-count:infinite;
-  animation-direction:normal;
-  animation-play-state:running;
-  -webkit-animation-name:arrow;
-  -webkit-animation-duration:1s;
-  -webkit-animation-timing-function:linear;
-  -webkit-animation-delay:0s;
-  -webkit-animation-iteration-count:infinite;
-  -webkit-animation-direction:normal;
-  -webkit-animation-play-state:running;
+
+span {
+    z-index: 999;
+    height: 3px;
+    margin:1px;
+    width: 30px;
+    background: #fff;
+    transition: 0.4s ease;
 }
-.pulse {
-  margin: 0 auto;
-  border-radius: 100px;
-  position: absolute;
-  left: 5px;
-  top: 5px;
-  z-index: 0;
-  background-color: transparent;
-  opacity: 0;
-  width: 110px;
-  height: 110px;
-  border: 10px solid #00baff;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -o-border-radius: 100px;
-  -ms-border-radius: 100px;
-  border-radius: 100px;
-  /* Giving Animation Function */
-  -webkit-animation: pulse 1s linear infinite 0.3s;
-  -moz-animation: pulse 1s linear infinite 0.3s; 
-  border-image: initial;
+
+span:first-child {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 35%;
 }
-@keyframes arrow
-  {
-  0%   {bottom:0;}
-  75% {bottom:90px;}
-  100% {bottom:0;}
-  }
-@-webkit-keyframes arrow
-  {
-  0%   {bottom:0;}
-  75% {bottom:90px;}
-  100% {bottom:0;}
-  }
-@keyframes circle
-  {
-  0%   {height:120px;}
-  10% {height: 120px;}
-  50% {height: 130px;}
-  75% {height: 150px;}
-  90% {height: 130px;}
-  100% {height: 120px;}
-  }
-@-webkit-keyframes circle
-  {
-  0%   {height:120px;}
-  10% {height: 120px;}
-  50% {height: 130px;}
-  75% {height: 150px;}
-  90% {height: 130px;}
-  100% {height: 120px;}
-  }
-@-webkit-keyframes pulse {       
-  0% {-webkit-transform: scale(0); opacity: 0;}
-  8% {-webkit-transform: scale(0); opacity: 0;}
-  15% {-webkit-transform: scale(0.1); opacity: 1;}
-  30% {-webkit-transform: scale(0.5); opacity: 1;}
-  100% {opacity: 0; -webkit-transform: scale(1.5);}
+
+span:nth-child(2) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 35%;
 }
-@-moz-keyframes pulse {       
-  0% {-webkit-transform: scale(0); opacity: 0;}
-  8% {-webkit-transform: scale(0); opacity: 0;}
-  15% {-webkit-transform: scale(0.1); opacity: 1;}
-  30% {-webkit-transform: scale(0.5); opacity: 1;}
-  100% {opacity: 0; -webkit-transform: scale(1.5);}
+
+span:nth-child(3) {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 54%;
 }
+
+span:nth-child(4) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 54%;
+}
+
+.round:hover span:nth-child(1) {
+    transform: rotate(-135deg);
+}
+
+.round:hover span:nth-child(2) {
+    transform: rotate(135deg);
+}
+
+.round:hover span:nth-child(3) {
+    transform: rotate(225deg);
+}
+
+.round:hover span:nth-child(4) {
+    transform: rotate(-225deg);
+}
+
+
+
+
+
 
 
 /* Services */
