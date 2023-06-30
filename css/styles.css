@@ -168,7 +168,7 @@ span {
 
 span:first-child {
     display: block;
-    position: absolute;
+    position: relative;
     transform: rotate(45deg);
     left: 25%;
     bottom: 35%;
@@ -176,7 +176,7 @@ span:first-child {
 
 span:nth-child(2) {
     display: block;
-    position: absolute;
+    position: relative;
     transform: rotate(-45deg);
     left: 45%;
     bottom: 35%;
@@ -184,7 +184,7 @@ span:nth-child(2) {
 
 span:nth-child(3) {
     display: block;
-    position: absolute;
+    position: relative;
     transform: rotate(45deg);
     left: 25%;
     bottom: 54%;
@@ -192,7 +192,7 @@ span:nth-child(3) {
 
 span:nth-child(4) {
     display: block;
-    position: absolute;
+    position: relative;
     transform: rotate(-45deg);
     left: 45%;
     bottom: 54%;
