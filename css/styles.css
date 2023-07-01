@@ -1,4 +1,4 @@
-body{
+*{
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
@@ -13,47 +13,50 @@ body{
   position: relative;
 }
 .logo {
+  float: left;
   color: white;
-  font-size: 28px;
+  font-size: 40px;
+}
+
+.lo-go {
+  color: #f44336;
 }
 
 nav{
   display: flex;
-  padding: 2% 6%;
+  padding: 0 6%;
   justify-content: space-between;
   align-items: center;
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
 nav img{
   width: 150px;
 }
 
-.nav-links{
-  flex: 1;
-  text-align: right;
+/* Navbar ul*/
+
+.nav-links ul{
+  float: right;
+  list-style: none;
+  margin: auto;
+  position: relative;
 }
 
 .nav-links ul li{
   list-style: none;
   display: inline-block;
-  padding: 8px 12px;
-  position: relative;
-}
-
-.nav-links ul li a{
-  color: #fff;
-  text-decoration: none;
-  font-size: 13px;
+  margin: 0 5px;
+  background-color: black;
 }
 
 .nav-links ul li::after{
   content: '';
-  width: 0%;
-  height: 2px;
-  background: #f44336;
-  display: block;
-  margin: auto;
-  transition: 0.5s;
+  clear: both;
+  display: table;
 }
 
 .nav-links ul li:hover::after{
@@ -61,9 +64,81 @@ nav img{
 
 }
 
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 20px;
+  padding: 8px 15px;
+}
+
+.nav-links ul li:hover > ul {
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-links ul li a:hover{
+  color:#33ffff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+}
+
+
+/* Navbar ul ul  */
+
+.nav-links ul ul {
+  width: auto;
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid #33ffff;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 0.3s;
+}
+
+.nav-links ul ul li {
+  position: relative;
+  margin: 0;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.nav-links ul ul li a {
+  line-height: 50px;
+}
+
+.nav-links ul ul li a:hover{
+  color:#33ffff;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+/* Navbar ul ul ul */
+
+.nav-links ul ul ul {
+  border-top: none;
+}
+
+.nav-links ul ul ul li {
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+
+.plus {
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+
+/* Text box */
+
 .text-box{
  
-  width: 50%;
+  width: 70%;
   color: #fff;
   padding: 20px 10px 20px 10px;
   position: absolute;
@@ -75,7 +150,7 @@ nav img{
 }
 
 .text-box h1{
-  font-size: 62px;
+  font-size: 70px;
 }
 
 .text-box p{
@@ -108,20 +183,20 @@ nav .fa{
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 790px) {
   .nav-links ul li{
     display: block;
   }
   
   .text-box h1{
-    font-size: 30px;
+    font-size: 50px;
   }
   
   .nav-links{
     position: fixed;
-    background: #717171;
+    background-color: black;
     width: 200px;
-    height: 100vh;
+    height: auto;
     top: 0;
     right: -200px;
     text-align: left;
@@ -139,86 +214,15 @@ nav .fa{
   .nav-links ul{
     padding: 30px;
   }
+
+  .nav-links ul li:hover > ul {
+    right: 150px;
+    top: 70px;
+    opacity: 1;
+    visibility: hidden;
+  }
+  
 }
-
-
-.center-con {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-}
-
-.round {
-    position: relative;
-    border: 3px solid #fff;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-}
-
-span {
-    z-index: 999;
-    height: 3px;
-    margin:1px;
-    width: 30px;
-    background: #fff;
-    transition: 0.4s ease;
-}
-
-span:first-child {
-    display: block;
-    position: relative;
-    transform: rotate(45deg);
-    left: 25%;
-    bottom: 35%;
-}
-
-span:nth-child(2) {
-    display: block;
-    position: relative;
-    transform: rotate(-45deg);
-    left: 45%;
-    bottom: 35%;
-}
-
-span:nth-child(3) {
-    display: block;
-    position: relative;
-    transform: rotate(45deg);
-    left: 25%;
-    bottom: 54%;
-}
-
-span:nth-child(4) {
-    display: block;
-    position: relative;
-    transform: rotate(-45deg);
-    left: 45%;
-    bottom: 54%;
-}
-
-.round:hover span:nth-child(1) {
-    transform: rotate(-135deg);
-}
-
-.round:hover span:nth-child(2) {
-    transform: rotate(135deg);
-}
-
-.round:hover span:nth-child(3) {
-    transform: rotate(225deg);
-}
-
-.round:hover span:nth-child(4) {
-    transform: rotate(-225deg);
-}
-
-
-
-
-
-
 
 /* Services */
 .service{
