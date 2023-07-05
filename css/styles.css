@@ -177,7 +177,6 @@ nav img{
   background: #4471a0;
   color: #fff;
   text-decoration: none;
-
 }
 
 nav .fa{
@@ -211,7 +210,7 @@ nav .fa{
     color: #fff;
     margin: 10px;
     font-size: 22px;
-    cursor: pointer;
+    cursor: pointer;z
   }
   .nav-links ul{
     padding: 30px;
@@ -231,7 +230,7 @@ nav .fa{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 20px;
 }
 
 h1{
@@ -574,7 +573,7 @@ background: rgba(226,0,0,0.7);
 .about-us{
   width: 80%;
   margin: auto;
-  padding-top: 80px;
+  padding-top: 20px;
   padding-bottom: 50px;
 }
 
@@ -601,15 +600,21 @@ background: rgba(226,0,0,0.7);
   width: 90%;
   margin: auto;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 10px;
 }
 
 .dumptruck-col{
-  flex-basis: 33%;
+  flex-basis: 31%;
   border-radius: 10px;
-  margin-bottom: 5%;
-  text-align: left;
+  margin-bottom: 2%;
+  box-sizing: border-box;
+  transition: 0.5s;
 }
+
+.dumptruck-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
 
 .dumptruck-col img{
   width: 100%;
@@ -631,6 +636,27 @@ background: rgba(226,0,0,0.7);
   height: 50vh;
   width: 100%;
   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("../images/dumptruck3.png");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+/* invest Page */
+.sub-header3{
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("../images/investbaner.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.sub-header4{
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("../images/blogbanner.jpg");
   background-position: center;
   background-size: cover;
   text-align: center;
