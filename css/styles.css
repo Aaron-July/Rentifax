@@ -102,6 +102,7 @@ nav img{
   margin: 0;
   width: 150px;
   float: none;
+  text-align: left;
   display: list-item;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
