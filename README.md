@@ -1,4 +1,4 @@
-# ARISTOMAS
-Aristomas Limited Company Website Project
+# RENTIFAX
+Rentifax Website Project
 
-https://aaron-july.github.io/Aristomas-limited/
+https://aaron-july.github.io/Rentifax/
